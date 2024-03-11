@@ -1,0 +1,59 @@
+.ohh{
+    background-color: white;
+    padding: 0;
+    height: auto;
+     
+    /* Add other styles as necessary */
+  }
+  .hr{
+    text-align: center;
+    font-weight: bold; /* Makes paragraph text bold */
+  font-size: 32px;
+  }
+  .ma{
+    text-align: center;
+    font-weight: bold; /* Makes paragraph text bold */
+  font-size: 24px;
+  
+  }
+ .yat {
+    font-family: 'Roboto', sans-serif; /* Add Google Font family */
+   color: gray;
+  }
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-box {
+    width: 30%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     /* Add border for visualization */
+    padding: 20px;
+    /* Replace #cccccc with the color you want */
+
+  /* Add a border-radius */
+  border-radius: 20px; /* Adjust the radius as needed */
+
+  /* Add a box-shadow */
+  /* The values are as follows: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color] */
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1); 
+  }
+  
+  .image {
+    display: block;       /* Changes display from inline to block */
+    max-width: 100%;      /* Ensures the image is responsive and doesn't exceed its container's width */
+    height: auto;         /* Keeps the image's aspect ratio intact */
+    width: 90px;         /* Set your desired width */
+    height: 90px;        /* Set your desired height */
+    margin: auto;         /* Centers the image horizontally within its container */
+    object-fit: contain;  /* Ensures the image fits within the specified width and height while preserving its aspect ratio */
+  }
+  
+  .text-content {
+    margin-top: 10px; /* Add margin between image and text content */
+    text-align: center;
+  }
+  

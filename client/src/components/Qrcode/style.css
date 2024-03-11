@@ -1,0 +1,114 @@
+.color-picker-container {
+    transform: scale(0.75); /* Adjust scale as needed */
+    transform-origin: top left; /* Keeps the top left corner in place */
+  }
+  .big-box{
+   
+  
+    
+  }
+  .small-box{
+   
+  
+    
+  }
+  .container{
+    border-radius: 50px;
+  }
+  .qr-border {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .hello {
+    padding: 5px;
+    border-radius: 10px;
+    /* The background color will be set dynamically based on state */
+  }
+  
+  .scan-me-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    
+  }
+
+
+  .btn1 {
+    position: relative;
+    display: inline-block; /* Ensure button behaves as an inline block */
+    background-color:#8babf1; /* Remove default background */
+    
+    box-shadow: inset;
+    border-radius: 50px;
+    cursor: pointer;
+    color:white; /* Set text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    overflow: hidden; /* Ensure overflow is hidden to prevent color overflow */
+    z-index: 1;
+  }
+  
+  .btn1:hover:before {
+    top: 0%;
+    border-radius: 0;
+  }
+  
+  .btn1:before {
+    content: '';
+    position: absolute;
+    top: 100%; /* Initially set the pseudo-element below the button */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:blue;
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+    transition: top 0.9s ease; /* Only transition the top property */
+  }
+
+  .custom-select {
+    display: block;
+    width: 70%;
+    padding: 0.5rem 1.5rem 0.5rem 0.75rem; /* top, right, bottom, left padding */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057; /* text color */
+    background-color: #fff; /* background color */
+    background-clip: padding-box;
+    border: 1px solid #ced4da; /* border color and width */
+    border-radius: 0.25rem; /* border radius for rounded corners */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    appearance: none;
+}
+
+.custom-select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-select:hover {
+    border-color: #adb5bd;
+}
+
+/* Arrow style for select */
+.custom-select {
+    position: relative;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%235c6ac4" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.75rem top 50%, 0 0;
+    background-size: 8px 10px, 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .custom-select {
+        transition: none;
+    }
+}
